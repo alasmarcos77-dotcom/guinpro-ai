@@ -1,11 +1,11 @@
 import logging
 from telegram.ext import Application, CommandHandler
-from app.config import settings
-from app.handlers import (
+from config import settings
+from handlers import (
     start, help_command, picks, football, nba, nfl, parlays,
     live, results, roi, analyze
 )
-from app.scheduler import configure_jobs
+from scheduler import configure_jobs
 
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",

@@ -1,6 +1,6 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from app.config import settings
+from config import settings
 
 def format_picks(items, title="MEJORES CUOTAS DISPONIBLES"):
     if not items:

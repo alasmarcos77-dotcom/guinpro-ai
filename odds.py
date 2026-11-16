@@ -1,5 +1,5 @@
 import requests
-from app.config import settings
+from config import settings
 
 BASE = "https://api.the-odds-api.com/v4"
 

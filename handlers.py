@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from app.odds import collect_sports, extract_candidates
-from app.formatting import format_picks
-from app.database import save_picks, summary
+from odds import collect_sports, extract_candidates
+from formatting import format_picks
+from database import save_picks, summary
 
 def _get_all():
     all_events, errors = [], []

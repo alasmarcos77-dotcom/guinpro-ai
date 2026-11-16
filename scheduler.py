@@ -1,9 +1,9 @@
 from datetime import time
 from zoneinfo import ZoneInfo
 from telegram.ext import ContextTypes
-from app.config import settings
-from app.handlers import _get_all
-from app.formatting import format_picks
+from config import settings
+from handlers import _get_all
+from formatting import format_picks
 
 async def _send_daily(context: ContextTypes.DEFAULT_TYPE):
     # Telegram bots cannot broadcast to users until they have started the bot.
